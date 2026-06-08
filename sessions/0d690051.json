@@ -1,0 +1,54 @@
+{
+  "id": "0d690051",
+  "created_at": "2026-06-09T00:49:05.170993",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: After every reply, if anything notable was discussed (user facts,\n   questions asked, topics covered, preferences, decisions, or interesting info),\n   append at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Use descriptive keys like \"topic_X\", \"preference_Y\", \"question_Z\".\n   Always try to save something useful. Skip only for trivial greetings.\n\n\nUser facts:\n- name: Gin\n- topic_Eiffel_Tower: discussed history, construction, height, and initial public reception\n- question_z_eiffel_tower_intro: Gin asked for an introduction to the Eiffel Tower\n- preference_gelato: likes gelato\n- preference_tennis: likes tennis"
+    },
+    {
+      "role": "user",
+      "content": "where is Paris"
+    },
+    {
+      "role": "assistant",
+      "content": "Paris is the capital city of **France**. It is located in the north-central part of the country, situated along the Seine River."
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: After every reply, if anything notable was discussed (user facts,\n   questions asked, topics covered, preferences, decisions, or interesting info),\n   append at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Use descriptive keys like \"topic_X\", \"preference_Y\", \"question_Z\".\n   Always try to save something useful. Skip only for trivial greetings.\n\n\nUser facts:\n- name: Gin\n- topic_Eiffel_Tower: discussed history, construction, height, and initial public reception\n- question_z_eiffel_tower_intro: Gin asked for an introduction to the Eiffel Tower\n- preference_gelato: likes gelato\n- preference_tennis: likes tennis"
+    },
+    {
+      "role": "user",
+      "content": "ok"
+    },
+    {
+      "role": "assistant",
+      "content": "Is there anything else you'd like to know?"
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: After every reply, if anything notable was discussed (user facts,\n   questions asked, topics covered, preferences, decisions, or interesting info),\n   append at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Use descriptive keys like \"topic_X\", \"preference_Y\", \"question_Z\".\n   Always try to save something useful. Skip only for trivial greetings.\n\n\nUser facts:\n- name: Gin\n- topic_Eiffel_Tower: discussed history, construction, height, and initial public reception\n- question_z_eiffel_tower_intro: Gin asked for an introduction to the Eiffel Tower\n- preference_gelato: likes gelato\n- preference_tennis: likes tennis"
+    },
+    {
+      "role": "user",
+      "content": "end"
+    },
+    {
+      "role": "assistant",
+      "content": "Goodbye! Have a great day."
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: After every reply, if anything notable was discussed (user facts,\n   questions asked, topics covered, preferences, decisions, or interesting info),\n   append at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Use descriptive keys like \"topic_X\", \"preference_Y\", \"question_Z\".\n   Always try to save something useful. Skip only for trivial greetings.\n\n\nUser facts:\n- name: Gin\n- topic_Eiffel_Tower: discussed history, construction, height, and initial public reception\n- question_z_eiffel_tower_intro: Gin asked for an introduction to the Eiffel Tower\n- preference_gelato: likes gelato\n- preference_tennis: likes tennis"
+    },
+    {
+      "role": "user",
+      "content": "bye"
+    },
+    {
+      "role": "assistant",
+      "content": "Bye! Take care!"
+    }
+  ]
+}

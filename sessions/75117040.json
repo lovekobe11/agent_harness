@@ -1,0 +1,26 @@
+{
+  "id": "75117040",
+  "created_at": "2026-06-09T00:27:22.816378",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: If the user shares personal facts (name, preferences, hobbies, etc.),\n   append a line at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Only include genuinely new and useful facts. Skip if nothing to remember.\n\n\nUser facts:\n- name: Gin\n- interest: music\n- interests: ['gelato', 'scuba diving', 'tennis']\n- favorite_musician: Michael Jackson"
+    },
+    {
+      "role": "user",
+      "content": "What is 2+2?"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"tool\": \"calc\", \"args\": {\"expression\": \"2+2\"}}"
+    },
+    {
+      "role": "user",
+      "content": "Tool result: 4\nPlease answer using this."
+    },
+    {
+      "role": "assistant",
+      "content": "2 + 2 equals 4."
+    }
+  ]
+}

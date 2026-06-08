@@ -1,0 +1,54 @@
+{
+  "id": "6a9c4e6b",
+  "created_at": "2026-06-09T00:25:11.206812",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: If the user shares personal facts (name, preferences, hobbies, etc.),\n   append a line at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Only include genuinely new and useful facts. Skip if nothing to remember.\n\n\nUser facts:\n- name: Gin\n- interest: music\n- interests: ['gelato', 'scuba diving', 'tennis']\n- favorite_musician: Michael Jackson"
+    },
+    {
+      "role": "user",
+      "content": "who am I?"
+    },
+    {
+      "role": "assistant",
+      "content": "You are **Gin**! \n\nI know that you are interested in music—specifically, your favorite musician is Michael Jackson. You also enjoy hobbies like eating gelato, scuba diving, and playing tennis."
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: If the user shares personal facts (name, preferences, hobbies, etc.),\n   append a line at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Only include genuinely new and useful facts. Skip if nothing to remember.\n\n\nUser facts:\n- name: Gin\n- interest: music\n- interests: ['gelato', 'scuba diving', 'tennis']\n- favorite_musician: Michael Jackson"
+    },
+    {
+      "role": "user",
+      "content": "what did we talk about?"
+    },
+    {
+      "role": "assistant",
+      "content": "We haven't chatted much yet! You just asked \"who am I?\", and I summarized the details I knew about you:\n\n*   Your name is **Gin**.\n*   You love music, especially **Michael Jackson**.\n*   Your hobbies include eating **gelato**, **scuba diving**, and playing **tennis**.\n\nIs there something specific you'd like to discuss?"
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: If the user shares personal facts (name, preferences, hobbies, etc.),\n   append a line at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Only include genuinely new and useful facts. Skip if nothing to remember.\n\n\nUser facts:\n- name: Gin\n- interest: music\n- interests: ['gelato', 'scuba diving', 'tennis']\n- favorite_musician: Michael Jackson"
+    },
+    {
+      "role": "user",
+      "content": "what is current session id?"
+    },
+    {
+      "role": "assistant",
+      "content": "I don't have access to your session ID. As an AI assistant, I can only see our conversation history and use the specific tools provided to me (like calculating math, checking the time, or searching the web). You might need to check your browser's developer tools or the application settings where we are chatting to find that information."
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: If the user shares personal facts (name, preferences, hobbies, etc.),\n   append a line at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Only include genuinely new and useful facts. Skip if nothing to remember.\n\n\nUser facts:\n- name: Gin\n- interest: music\n- interests: ['gelato', 'scuba diving', 'tennis']\n- favorite_musician: Michael Jackson"
+    },
+    {
+      "role": "user",
+      "content": "bye"
+    },
+    {
+      "role": "assistant",
+      "content": "Goodbye, Gin! It was nice chatting with you. Feel free to come back anytime if you want to talk about Michael Jackson, gelato, or anything else! Have a great day!"
+    }
+  ]
+}

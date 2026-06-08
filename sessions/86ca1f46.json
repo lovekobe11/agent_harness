@@ -1,0 +1,42 @@
+{
+  "id": "86ca1f46",
+  "created_at": "2026-06-09T00:59:04.385920",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: After every reply, if anything notable was discussed (user facts,\n   questions asked, topics covered, preferences, decisions, or interesting info),\n   append at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Use descriptive keys like \"topic_X\", \"preference_Y\", \"question_Z\".\n   Always try to save something useful. Skip only for trivial greetings.\n\n\nUser facts:\n- name: Tom\n- hobby: surfing\n- pet: dog"
+    },
+    {
+      "role": "user",
+      "content": "my idol is Kobe"
+    },
+    {
+      "role": "assistant",
+      "content": "That's awesome! Kobe Bryant was truly legendary. His work ethic and \"Mamba Mentality\" inspired so many people. Do you play basketball yourself, or do you just admire his mindset?"
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: After every reply, if anything notable was discussed (user facts,\n   questions asked, topics covered, preferences, decisions, or interesting info),\n   append at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Use descriptive keys like \"topic_X\", \"preference_Y\", \"question_Z\".\n   Always try to save something useful. Skip only for trivial greetings.\n\n\nUser facts:\n- name: Tom\n- hobby: surfing\n- pet: dog\n- idol: Kobe"
+    },
+    {
+      "role": "user",
+      "content": "both"
+    },
+    {
+      "role": "assistant",
+      "content": "That's awesome! Channeling that \"Mamba Mentality\" on the court must make for some intense games. Since you also surf, you must have great balance and endurance. Do you prefer 3-on-3 pickup games or full-court matches?"
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: After every reply, if anything notable was discussed (user facts,\n   questions asked, topics covered, preferences, decisions, or interesting info),\n   append at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Use descriptive keys like \"topic_X\", \"preference_Y\", \"question_Z\".\n   Always try to save something useful. Skip only for trivial greetings.\n\n\nUser facts:\n- name: Tom\n- hobby: surfing\n- pet: dog\n- idol: Kobe\n- activity_basketball: plays\n- interest_mamba_mentality: admires work ethic"
+    },
+    {
+      "role": "user",
+      "content": "3-on-3"
+    },
+    {
+      "role": "assistant",
+      "content": "3-on-3 is perfect for showing off skills and keeping the pace high! It really tests your individual ability, which definitely aligns with that Mamba Mentality. Since you also surf, do you usually find courts near the beach, or do you head somewhere specific to play?"
+    }
+  ]
+}

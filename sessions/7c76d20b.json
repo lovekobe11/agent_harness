@@ -1,0 +1,42 @@
+{
+  "id": "7c76d20b",
+  "created_at": "2026-06-09T01:00:09.879248",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: After every reply, if anything notable was discussed (user facts,\n   questions asked, topics covered, preferences, decisions, or interesting info),\n   append at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Use descriptive keys like \"topic_X\", \"preference_Y\", \"question_Z\".\n   Always try to save something useful. Skip only for trivial greetings.\n\n\nUser facts:\n- name: Tom\n- hobby: surfing\n- pet: dog\n- idol: Kobe\n- activity_basketball: plays\n- interest_mamba_mentality: admires work ethic\n- basketball_format: prefers 3-on-3"
+    },
+    {
+      "role": "user",
+      "content": "what is my name"
+    },
+    {
+      "role": "assistant",
+      "content": "Your name is Tom."
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: After every reply, if anything notable was discussed (user facts,\n   questions asked, topics covered, preferences, decisions, or interesting info),\n   append at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Use descriptive keys like \"topic_X\", \"preference_Y\", \"question_Z\".\n   Always try to save something useful. Skip only for trivial greetings.\n\n\nUser facts:\n- name: Tom\n- hobby: surfing\n- pet: dog\n- idol: Kobe\n- activity_basketball: plays\n- interest_mamba_mentality: admires work ethic\n- basketball_format: prefers 3-on-3"
+    },
+    {
+      "role": "user",
+      "content": "oh my name is Gin and I like diving instead"
+    },
+    {
+      "role": "assistant",
+      "content": "Got it! Your name is Gin, and you like diving. Nice change of pace from surfing!"
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: After every reply, if anything notable was discussed (user facts,\n   questions asked, topics covered, preferences, decisions, or interesting info),\n   append at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Use descriptive keys like \"topic_X\", \"preference_Y\", \"question_Z\".\n   Always try to save something useful. Skip only for trivial greetings.\n\n\nUser facts:\n- name: Tom\n- hobby: surfing\n- pet: dog\n- idol: Kobe\n- activity_basketball: plays\n- interest_mamba_mentality: admires work ethic\n- basketball_format: prefers 3-on-3"
+    },
+    {
+      "role": "user",
+      "content": "cool"
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds good! Nice to meet you, Gin. Diving sounds like a great adventure."
+    }
+  ]
+}

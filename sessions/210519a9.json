@@ -1,0 +1,78 @@
+{
+  "id": "210519a9",
+  "created_at": "2026-06-09T00:00:13.700938",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: If the user shares personal facts (name, preferences, hobbies, etc.),\n   append a line at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Only include genuinely new and useful facts. Skip if nothing to remember.\n"
+    },
+    {
+      "role": "user",
+      "content": "my name is Gin and I like gelato"
+    },
+    {
+      "role": "assistant",
+      "content": "Nice to meet you, Gin! Gelato is absolutely delicious. Do you have a favorite flavor?"
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: If the user shares personal facts (name, preferences, hobbies, etc.),\n   append a line at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Only include genuinely new and useful facts. Skip if nothing to remember.\n\n\nUser facts:\n- name: Gin\n- interest: gelato"
+    },
+    {
+      "role": "user",
+      "content": "remeber I like scuba diving and tennis too"
+    },
+    {
+      "role": "assistant",
+      "content": "Got it! Scuba diving and tennis sound like great ways to stay active. I've made a note of those interests for you."
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: If the user shares personal facts (name, preferences, hobbies, etc.),\n   append a line at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Only include genuinely new and useful facts. Skip if nothing to remember.\n\n\nUser facts:\n- name: Gin\n- interest: gelato"
+    },
+    {
+      "role": "user",
+      "content": "what is current session id?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry, but I don't have access to your current session ID."
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: If the user shares personal facts (name, preferences, hobbies, etc.),\n   append a line at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Only include genuinely new and useful facts. Skip if nothing to remember.\n\n\nUser facts:\n- name: Gin\n- interest: gelato"
+    },
+    {
+      "role": "user",
+      "content": "/remeber I like scuba diving and tennis too"
+    },
+    {
+      "role": "assistant",
+      "content": "Understood, Gin. I've noted down that you enjoy scuba diving and tennis as well."
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: If the user shares personal facts (name, preferences, hobbies, etc.),\n   append a line at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Only include genuinely new and useful facts. Skip if nothing to remember.\n\n\nUser facts:\n- name: Gin\n- interest: gelato\n- interests: ['gelato', 'scuba diving', 'tennis']"
+    },
+    {
+      "role": "user",
+      "content": "I like music too"
+    },
+    {
+      "role": "assistant",
+      "content": "That's wonderful! Music is such a universal language. Do you have a favorite genre or artist?"
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n4. AUTO-MEMORY: If the user shares personal facts (name, preferences, hobbies, etc.),\n   append a line at the very end: <!-- memories: {\"key\": \"value\"} -->\n   Only include genuinely new and useful facts. Skip if nothing to remember.\n\n\nUser facts:\n- name: Gin\n- interest: music\n- interests: ['gelato', 'scuba diving', 'tennis']"
+    },
+    {
+      "role": "user",
+      "content": "Michael Jackson"
+    },
+    {
+      "role": "assistant",
+      "content": "The King of Pop! He really changed the music industry forever. Do you have a favorite MJ album, or do you love them all? 🎤✨"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "memories": {
+    "name": "Gin",
+    "hobby": "diving",
+    "pet": "dog",
+    "idol": "Kobe",
+    "activity_basketball": "plays",
+    "interest_mamba_mentality": "admires work ethic",
+    "basketball_format": "prefers 3-on-3",
+    "preference_gelato": "likes eating gelato",
+    "music_mj_dangerous": "User's favorite Michael Jackson song",
+    "identity": "Gin",
+    "hobbies": [
+      "diving"
+    ],
+    "basketball_style": "3-on-3",
+    "preference": "gelato",
+    "music_favorite": "MJ - Dangerous",
+    "topic_math": "User asked for calculation of 123 * 456 + 789",
+    "math_calculation": "123 * 456 + 789 = 56877",
+    "identity_confirmed": "Gin",
+    "topic_discussed": "personal_profile",
+    "context": "user_repeated_math_question",
+    "current_interaction": "math_calculations",
+    "interaction_context": "identity_inquiry"
+  },
+  "_meta": {
+    "name": 1780938063.949468,
+    "hobby": 1780938063.9504771,
+    "pet": 1780938547.918408,
+    "idol": 1780938547.9188921,
+    "activity_basketball": 1780937980.51667,
+    "interest_mamba_mentality": 1780937980.517437,
+    "basketball_format": 1780938002.9907331,
+    "preference_gelato": 1780938091.4674802,
+    "music_mj_dangerous": 1780938127.4580648,
+    "identity": 1780938547.915829,
+    "hobbies": 1780938547.9177442,
+    "basketball_style": 1780938547.919347,
+    "preference": 1780938547.9198,
+    "music_favorite": 1780938547.920266,
+    "topic_math": 1780939769.475457,
+    "math_calculation": 1780939923.084439,
+    "identity_confirmed": 1780940013.577963,
+    "topic_discussed": 1780940013.578866,
+    "context": 1780940061.7540202,
+    "current_interaction": 1780940831.1626298,
+    "interaction_context": 1780940960.515758
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "178639c5",
+  "created_at": "2026-06-08T23:27:17.890967",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n"
+    },
+    {
+      "role": "user",
+      "content": "What is 123 * 456 + 789?"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"tool\": \"calc\", \"args\": {\"expression\": \"123 * 456 + 789\"}}"
+    },
+    {
+      "role": "user",
+      "content": "Tool result: 56877\nPlease answer using this."
+    },
+    {
+      "role": "assistant",
+      "content": "The result of $ 123 \\times 456 + 789 $ is **56,877**."
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n"
+    },
+    {
+      "role": "user",
+      "content": "What time is it now?"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"tool\": \"get_time\", \"args\": {}}"
+    },
+    {
+      "role": "user",
+      "content": "Tool result: 2026-06-08 23:27:21\nPlease answer using this."
+    },
+    {
+      "role": "assistant",
+      "content": "It's currently **23:27 (11:27 PM)** on **June 8, 2026**."
+    },
+    {
+      "role": "system",
+      "content": "You are a helpful AI assistant running inside an Agent Harness.\nYou have access to these tools:\n  - calc (args: expression): Evaluate a math expression\n  - get_time: Get current date & time\n  - web_search (args: query): Search the web (placeholder)\n\nRules:\n1. When you need a tool, reply with JSON: {\"tool\": \"<name>\", \"args\": {...}}\n2. Otherwise, answer the user directly in natural language.\n3. Be concise, friendly, and honest about limitations.\n\n\nUser facts:\n- name: Alice"
+    },
+    {
+      "role": "user",
+      "content": "What is my name?"
+    },
+    {
+      "role": "assistant",
+      "content": "Your name is **Alice**. 😊"
+    }
+  ]
+}
