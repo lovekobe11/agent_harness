@@ -42,7 +42,56 @@ def write_file(filename: str, content: str) -> str:
         f.write(content)
     return f"Wrote content to {filename}"
 
-    
+def _safe_path(filename: str) -> str:
+    """Prevent path traversal attacks, enforce limitation to sandbox directory."""
+    return os.path.join(SANDBOX, os.path.basename(filename))
+
+def list_files() -> str:
+    """List all files currently in the sandbox directory."""
+    files = os.listdir(SANDBOX)
+    if not files:
+        return "📂 Sandbox is empty."
+    return "📂 Files in sandbox:\n" + "\n".join(f"  - {f}" for f in sorted(files))
+
+
+def read_file(filename: str) -> str:
+    """
+    Read and return the content of a file in the sandbox.
+
+    Args:
+        filename: Name of the file to read
+    """
+    path = _safe_path(filename)
+    if not os.path.exists(path):
+        return f"❌ File not found: {filename}"
+    with open(path, "r", encoding="utf-8") as f:
+        content = f.read()
+    if len(content) > 3000:
+        content = content[:3000] + "\n... (truncated)"
+    return content
+
+
+def get_file_info(filename: str) -> str:
+    """
+    Return metadata about a file in the sandbox (size, modified time).
+
+    Args:
+        filename: Name of the file to inspect
+    """
+    path = _safe_path(filename)
+    if not os.path.exists(path):
+        return f"❌ File not found: {filename}"
+    stat = os.stat(path)
+    import datetime
+    mtime = datetime.datetime.fromtimestamp(stat.st_mtime).strftime("%Y-%m-%d %H:%M:%S")
+    return (
+        f"📄 {filename}\n"
+        f"   Size    : {stat.st_size} bytes\n"
+        f"   Modified: {mtime}"
+    )
+
+
+
 def run_python(filename: str) -> str:
     """
     Execute a Python file inside the sandbox directory.
@@ -137,6 +186,9 @@ TOOL_REGISTRY: dict[str, dict] = {
     "write_file":  {"fn": write_file,  "desc": "Write content to a file",     "args": "filename, content"},
     "run_python":  {"fn": run_python,  "desc": "Execute a Python file",        "args": "filename"},
     "run_sql":     {"fn": run_sql,     "desc": "Execute a SQL statement",     "args": "sql"},
+    "list_files":  {"fn": list_files,  "desc": "List files in the sandbox",    "args": ""},
+    "read_file":   {"fn": read_file,   "desc": "Read content of a file",          "args": "filename"},
+    "get_file_info":{"fn": get_file_info, "desc": "Get metadata about a file",        "args": "filename"},
 }
 
 

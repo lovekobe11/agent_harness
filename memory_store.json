@@ -22,7 +22,19 @@
     "topic_discussed": "personal_profile",
     "context": "user_repeated_math_question",
     "current_interaction": "math_calculations",
-    "interaction_context": "identity_inquiry"
+    "interaction_context": "identity_inquiry",
+    "diving_trip_plan": "Raja Ampat",
+    "preferred_diving_format": "likely prefers relaxed pace given 3-on-3 style",
+    "travel_interests": [
+      "diving",
+      "food_exploration"
+    ],
+    "budget_range": "$1900-2900 for 7 days",
+    "topic": "world_cup_2026_plan",
+    "status": "created_in_workspace",
+    "topic_world_cup_2026": "Created detailed schedule file 'world_cup_2026_schedule.md' in /tmp/sandbox/",
+    "task_completed": "saved_schedule_to_md",
+    "world_cup_2026_short_plan": "Created a short 4-day LA itinerary focusing on SoFi Stadium, Kobe tributes, Venice Beach 3-on-3, and gelato."
   },
   "_meta": {
     "name": 1780938063.949468,
@@ -45,6 +57,15 @@
     "topic_discussed": 1780940013.578866,
     "context": 1780940061.7540202,
     "current_interaction": 1780940831.1626298,
-    "interaction_context": 1780940960.515758
+    "interaction_context": 1780940960.515758,
+    "diving_trip_plan": 1780947898.851296,
+    "preferred_diving_format": 1780947898.8522801,
+    "travel_interests": 1780947898.853075,
+    "budget_range": 1780947898.8537679,
+    "topic": 1780949122.1997619,
+    "status": 1780949122.200947,
+    "topic_world_cup_2026": 1780949292.634583,
+    "task_completed": 1780949292.635503,
+    "world_cup_2026_short_plan": 1780950424.1723258
   }
 }

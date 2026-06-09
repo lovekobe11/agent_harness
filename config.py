@@ -21,9 +21,9 @@ class Config:
 
     API_KEY: str = os.getenv("DASHSCOPE_API_KEY")
     BASE_URL: str = "https://dashscope.aliyuncs.com/compatible-mode/v1"
-    MODEL: str = "qwen3.6-flash-2026-04-16"
+    MODEL: str = "qwen3.6-flash-2026-04-16" ##"qwen3.7-plus" 
     TEMPERATURE: float = 0.7
-    MAX_TOKENS: int = 1024
+    MAX_TOKENS: int = 2048
     MAX_LOOPS: int = 5          # max tool-call rounds per user turn
     MEMORY_FILE: str = str(Path(__file__).parent / "memory_store.json")
     LOG_FILE: str = str(Path(__file__).parent / "agent.log")
